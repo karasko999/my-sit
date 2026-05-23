@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Karasko | مطور و مساعد برمجي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3>أهلاً بك، أنا</h3>
+                <h1>Jarasko</h1>
+                <h2>مطور برمجيات وأنظمة متطورة</h2>
+                <p>أقوم بتحويل الأفكار المعقدة إلى برمجيات وسيرفرات وحلول رقمية متكاملة، بكفاءة حماية عالية وأداء متطور وخالٍ من الثغرات البرمجية.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn primary-btn">تصفح أعمالي</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-area">
+                <div class="profile-card">
+                    <img src="logo.jpg" alt="Karasko" class="profile-img" onerror="this.src='https://via.placeholder.com/300/1e1b4b/ffffff?text=KR';">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <h2 class="section-title">نبذة <span>عني</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>مرحباً! أنا مطور ومصمم أنظمة برمجية متطورة، متخصص في إدارة وتطوير السيرفرات والبرمجيات الخلفية المخصصة للألعاب والمنصات التفاعلية، وحماية الخوادم والشبكات من الهجمات البرمجية الضارة والـ Raids.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-box neon-blue">
+                        <div class="stat-number" data-target="5+">0</div>
+                        <div class="stat-label">سنوات الخبرة</div>
+                    </div>
+                    <div class="stat-box neon-purple">
+                        <div class="stat-number" data-target="100+">0</div>
+                        <div class="stat-label">مشاريع مكتملة <i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="stat-box neon-pink">
+                        <div class="stat-number" data-target="150+">0</div>
+                        <div class="stat-label">عملاء راضون <i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section section-padding">
+        <h2 class="section-title">تقنيات <span>ولغات البرمجة</span></h2>
+        <p class="skills-hint">انقر فوق أي لغة لإظهار ميزتها وسطر التعريف الخاص بها فوراً</p>
+
+        <div class="skills-grid">
+            <div class="skill-card" onclick="toggleSkillDefinition(this)">
+                <i class="devicon-html5-plain colored skill-icon"></i>
+                <h3>HTML</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="95%"></div></div>
+                    <span class="skill-percent-text">95%</span>
+                </div>
+                <p class="skill-definition">بناء هيكلة صفحات الويب المتطورة بكفاءة عالية وتوافق كامل مع محركات البحث SEO.</p>
+            </div>
+            
+            <div class="skill-card" onclick="toggleSkillDefinition(this)">
+                <i class="devicon-css3-plain colored skill-icon"></i>
+                <h3>CSS</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="90%"></div></div>
+                    <span class="skill-percent-text">90%</span>
+                </div>
+                <p class="skill-definition">تصميم واجهات مستخدم مذهلة، تفاعلية ومستقبلية تعتمد على مؤثرات النيون والزجاج الرائع.</p>
+            </div>
+            
+            <div class="skill-card" onclick="toggleSkillDefinition(this)">
+                <i class="devicon-javascript-plain colored skill-icon"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="85%"></div></div>
+                    <span class="skill-percent-text">85%</span>
+                </div>
+                <p class="skill-definition">إضافة التفاعلية الكاملة للموقع، معالجة البيانات، والتحكم بالخلفية الحية بنعومة وسلاسة.</p>
+            </div>
+
+            <div class="skill-card" onclick="toggleSkillDefinition(this)">
+                <i class="devicon-cplusplus-plain colored skill-icon"></i>
+                <h3>C++</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="80%"></div></div>
+                    <span class="skill-percent-text">80%</span>
+                </div>
+                <p class="skill-definition">تتطلب سرعة خارقة، تحكم تام بالذاكرة وأداء شديد التحمل لتطوير الأنظمة المتقدمة.</p>
+            </div>
+
+            <div class="skill-card" onclick="toggleSkillDefinition(this)">
+                <i class="devicon-php-plain colored skill-icon"></i>
+                <h3>PHP</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="75%"></div></div>
+                    <span class="skill-percent-text">75%</span>
+                </div>
+                <p class="skill-definition">تصميم الأنظمة الخلفية وإدارة برمجيات قواعد البيانات الآمنة والاتصال الديناميكي بالموقع.</p>
+            </div>
+
+            <div class="skill-card pwn-card" onclick="toggleSkillDefinition(this)">
+                <div class="custom-pwn-icon"><i class="fas fa-terminal"></i></div>
+                <h3>PAWN (PWN)</h3>
+                <div class="skill-progress-area">
+                    <div class="skill-bar"><div class="skill-per" data-width="95%"></div></div>
+                    <span class="skill-percent-text">95%</span>
+                </div>
+                <p class="skill-definition">برمجة وتطوير السكربتات والأنظمة الداخلية المعقدة وسيرفرات الألعاب بكفاءة برمجية تامة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="section-header">
+            <h2 class="section-title">معرض <span>المشاريع</span></h2>
+            <p class="section-subtitle">اضغط على صورة المشروع لعرض الشرح الكلي والتعريف البرمجي المفصل</p>
+        </div>
+
+        <div class="servers-grid">
+            
+            <div class="server-card-image-only" onclick="openProjectModal(1)">
+                <img src="drug.png" alt="سيستم بيع مخدرات" class="server-full-img" onerror="this.src='https://via.placeholder.com/600x300/ff2a2a/ffffff?text=FiveM+Drugs+System';">
+                <div class="image-overlay-title">
+                    <h3>سيستم بيع مخدرات (FiveM)</h3>
+                    <span>اضغط لعرض الشرح <i class="fas fa-expand-alt"></i></span>
+                </div>
+            </div>
+
+            <div class="server-card-image-only" onclick="openProjectModal(2)">
+                <img src="bot.png" alt="بوت ديسكورد حماية" class="server-full-img" onerror="this.src='https://via.placeholder.com/600x300/9d4edd/ffffff?text=Discord+Anti-Raid+Bot';">
+                <div class="image-overlay-title">
+                    <h3>بوت ديسكورد حماية سيرفر</h3>
+                    <span>اضغط لعرض الشرح <i class="fas fa-expand-alt"></i></span>
+                </div>
+            </div>
+
+            <div class="server-card-image-only" onclick="openProjectModal(3)">
+                <img src="web.png" alt="موقع ويب متكامل للسيرفر" class="server-full-img" onerror="this.src='https://via.placeholder.com/600x300/00d2ff/ffffff?text=Server+Web+Portal';">
+                <div class="image-overlay-title">
+                    <h3>موقع ويب متكامل للسيرفر</h3>
+                    <span>اضغط لعرض الشرح <i class="fas fa-expand-alt"></i></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="projectModal" onclick="closeProjectModal()">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <button class="close-modal-btn" onclick="closeProjectModal()">&times;</button>
+            <div class="modal-header-info">
+                <span class="modal-badge" id="modalBadge">تصنيف المشروع</span>
+                <h3 id="modalTitle">اسم المشروع</h3>
+            </div>
+            <hr class="modal-divider">
+            <div class="modal-body-text">
+                <h4><i class="fas fa-file-alt"></i> الشرح الكلي والتفاصيل البرمجية:</h4>
+                <p id="modalDescription">هنا سيتم عرض وصف المشروع بالكامل...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-bottom" onclick="closeProjectModal()">إغلاق الشرح</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section section-padding">
+        <h2 class="section-title">تواصل <span>معي</span></h2>
+        <p class="section-subtitle">انضم لسيرفر الديسكورد لطلب ميزات برمجية أو تابع شروحاتي على اليوتيوب</p>
+        
+        <div class="contact-container">
+            <div class="social-contact-wrapper">
+                
+                <a href="https://discord.gg/wgrbknWfME" target="_blank" class="social-contact-card discord-card">
+                    <div class="social-icon-wrapper">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="social-info-text">
+                        <h3>سيرفر الديسكورد</h3>
+                        <p>افتح تذكرة (Ticket) الآن للحصول على أفضل الخدمات والحلول البرمجية الفورية لـ سيرفرك.</p>
+                    </div>
+                    <span class="visit-badge">انضمام الآن <i class="fas fa-arrow-left"></i></span>
+                </a>
+
+                <a href="https://www.youtube.com/@karaskodev target="_blank" class="social-contact-card youtube-card">
+                    <div class="social-icon-wrapper">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="social-info-text">
+                        <h3>قناة اليوتيوب</h3>
+                        <p>استمتع بمشاهدة أحدث استعراضات الأنظمة وشروحات حماية الخوادم والبرمجة الاحترافية.</p>
+                    </div>
+                    <span class="visit-badge">زيارة القناة <i class="fas fa-arrow-left"></i></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
